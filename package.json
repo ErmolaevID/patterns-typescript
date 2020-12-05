@@ -1,0 +1,32 @@
+{
+  "name": "patterns-typescript",
+  "version": "1.0.0",
+  "description": "Patterns examples on TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ErmolaevID/patterns-typescript.git"
+  },
+  "keywords": [
+    "typescript",
+    "patterns"
+  ],
+  "author": "Ermolaev Ilya <Ermolaev.ID@yandex.ru> (https://github.com/ErmolaevID)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ErmolaevID/patterns-typescript/issues"
+  },
+  "homepage": "https://github.com/ErmolaevID/patterns-typescript#readme",
+  "dependencies": {
+    "typescript": "^4.1.2"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.9.0",
+    "@typescript-eslint/parser": "^4.9.0",
+    "eslint": "^7.15.0",
+    "eslint-config-jesse": "^2.2.2"
+  }
+}
