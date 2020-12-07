@@ -9,5 +9,5 @@ This repository contains patterns examples on TypeScript
 - Create folder with the pattern name
 - Create file with name PatternName.ts and add general view of pattern
 - Create file with name PatternNameExample.ts and add real life example of pattern
-- Create file with name README.md and add UML diagram of patter
+- Create file with name README.md and add UML diagram of pattern
 - Create pull request with containing PatternName.ts, PatternNameExample.ts, README.md
