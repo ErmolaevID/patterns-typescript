@@ -1,14 +1,14 @@
 interface Product {
-	doWork(): void;
+  doWork(): void;
 }
 
 abstract class Creator {
-	abstract factoryMethod(): Product;
+  abstract factoryMethod(): Product;
 
-	public someWork(): void {
-	  const p = this.factoryMethod();
-	  // ...
-	}
+  public someWork(): void {
+    const p = this.factoryMethod();
+    // ...
+  }
 }
 
 class ConcreteCreator1 extends Creator {
@@ -36,15 +36,15 @@ class ConcreteProduct2 implements Product {
 }
 
 class Application {
-	private _creator: Creator;
+  private _creator: Creator;
 
-	constructor(creator: Creator) {
-	  this._creator = creator;
-	}
+  constructor(creator: Creator) {
+    this._creator = creator;
+  }
 
-	public run() {
-	  this._creator.someWork();
-	}
+  public run() {
+    this._creator.someWork();
+  }
 }
 
 new Application(new ConcreteCreator1()).run();
