@@ -86,12 +86,12 @@ class App {
     }
   }
 
-  public Run() {
+  public run() {
     this._dialog.render();
     this._dialog.createButton();
   }
 }
 
 const app = new App(OSList.MacOS);
-app.Run();
+app.run();
 
