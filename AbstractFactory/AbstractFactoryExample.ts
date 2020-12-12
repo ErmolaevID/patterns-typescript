@@ -19,7 +19,7 @@ interface CoffeeTable {
 class ModernFurnitureFactory implements FurnitureFactory {
   public createChair(): Chair {
     return new ModernChair();
-  }	
+  }
 
   public createCoffeeTable(): CoffeeTable {
     return new ModernCoffeeTable();
@@ -69,11 +69,11 @@ class Application {
         this._factory = new ModernFurnitureFactory();
         break;
       case FurnitureType.VICTORIAN:
-	this._factory = new VictorianFurnitureFactory();
-	break;
+        this._factory = new VictorianFurnitureFactory();
+        break;
       default:
-	throw new Error("This factory does not exist");		
-      }
+        throw new Error("This factory does not exist");
+    }
   }
 
   public run() {
