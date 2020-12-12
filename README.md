@@ -1,6 +1,7 @@
 # Patterns (TypeScript)
 This repository contains patterns examples on TypeScript
 ## What already have
+- AbstractFactory
 - FactoryMethod
 ## How to contribute
 1. Clone main repository branch
