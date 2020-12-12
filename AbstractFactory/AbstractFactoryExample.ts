@@ -1,19 +1,19 @@
 enum FurnitureType {
-	"MODERN",
-	"VICTORIAN"
+  "MODERN",
+  "VICTORIAN"
 }
 
 interface FurnitureFactory {
-	createChair(): Chair;
-	createCoffeeTable(): CoffeeTable;
+  createChair(): Chair;
+  createCoffeeTable(): CoffeeTable;
 }
 
 interface Chair {
-	sit(): void;
+  sit(): void;
 }
 
 interface CoffeeTable {
-	useForCoffee(): void;
+  useForCoffee(): void;
 }
 
 class ModernFurnitureFactory implements FurnitureFactory {
@@ -61,27 +61,27 @@ class VictorianCoffeeTable implements CoffeeTable {
 }
 
 class Application {
-	private _factory: FurnitureFactory;
+  private _factory: FurnitureFactory;
 
-	constructor(furtinureType: FurnitureType) {
-	  switch (furtinureType) {
-	    case FurnitureType.MODERN:
-	      this._factory = new ModernFurnitureFactory();
-	      break;
-	    case FurnitureType.VICTORIAN:
-	      this._factory = new VictorianFurnitureFactory();
-	      break;
-	    default:
-	      throw new Error("This factory does not exist");		
-	  }
-	}
+  constructor(furtinureType: FurnitureType) {
+    switch (furtinureType) {
+      case FurnitureType.MODERN:
+        this._factory = new ModernFurnitureFactory();
+        break;
+      case FurnitureType.VICTORIAN:
+	this._factory = new VictorianFurnitureFactory();
+	break;
+      default:
+	throw new Error("This factory does not exist");		
+      }
+  }
 
-	public run() {
-	  const chair = this._factory.createChair();
-	  chair.sit();
-	  const coffeeTable = this._factory.createCoffeeTable();
-	  coffeeTable.useForCoffee();
-	}
+  public run() {
+    const chair = this._factory.createChair();
+    chair.sit();
+    const coffeeTable = this._factory.createCoffeeTable();
+    coffeeTable.useForCoffee();
+  }
 }
 
 const app = new Application(FurnitureType.MODERN);
