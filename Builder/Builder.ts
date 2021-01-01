@@ -6,7 +6,15 @@ namespace Builder {
   }
 
   class Product {
-    public parts: string[] = [];
+    private _parts: string[] = [];
+
+    public addPart(part: string) {
+      this._parts.push(part);
+    }
+
+    public get parts(): string[] {
+      return this._parts;
+    }
   }
 
   class ConcreteBuilder1 implements Builder {
@@ -17,15 +25,15 @@ namespace Builder {
     }
 
     public buildPartA(): void {
-      this._product.parts.push("A");
+      this._product.addPart("A");
     }
 
     public buildPartB(): void {
-      this._product.parts.push("B");
+      this._product.addPart("B");
     }
 
     public buildPartC(): void {
-      this._product.parts.push("C");
+      this._product.addPart("C");
     }
   }
 
