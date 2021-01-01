@@ -39,7 +39,7 @@ namespace AbstractFactory {
       return new ConcreteProductA2();
     }
 
-    createProductB(): ProductB {
+    public createProductB(): ProductB {
       return new ConcreteProductB2();
     }
   }
