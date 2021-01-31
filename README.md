@@ -14,3 +14,6 @@ This repository contains patterns examples on TypeScript
 5. Create file with name PatternNameExample.ts and add real life example of pattern (Wrap your code in namespace PatternNameExample)
 6. Create file with name README.md and add UML diagram of pattern
 7. Create pull request with containing PatternName.ts, PatternNameExample.ts, README.md
+
+## Useful links
+[Refactoring Guru Site](https://refactoring.guru/)
