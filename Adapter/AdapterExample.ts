@@ -1,4 +1,4 @@
-namespace Adapter {
+namespace AdapterExample {
   class RoundHole {
     private readonly _radius: number;
 
