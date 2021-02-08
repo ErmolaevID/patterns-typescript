@@ -5,6 +5,7 @@ This repository contains patterns examples on TypeScript
 - FactoryMethod
 - Builder
 - Singleton
+- Adapter
 ## How to contribute
 1. Clone main repository branch
 2. In main directory run:
