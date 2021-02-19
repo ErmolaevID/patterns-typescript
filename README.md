@@ -1,11 +1,11 @@
 # Patterns (TypeScript)
 This repository contains patterns examples on TypeScript
 ## What already have
-- AbstractFactory
-- FactoryMethod
-- Builder
-- Singleton
-- Adapter
+- [AbstractFactory](https://github.com/ErmolaevID/patterns-typescript/tree/main/AbstractFactory)
+- [Adapter](https://github.com/ErmolaevID/patterns-typescript/tree/main/Adapter)
+- [Builder](https://github.com/ErmolaevID/patterns-typescript/tree/main/Builder)
+- [FactoryMethod](https://github.com/ErmolaevID/patterns-typescript/tree/main/FactoryMethod)
+- [Singleton](https://github.com/ErmolaevID/patterns-typescript/tree/main/Singleton)
 ## How to contribute
 1. Clone main repository branch
 2. In main directory run:
